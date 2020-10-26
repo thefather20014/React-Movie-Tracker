@@ -1,0 +1,10 @@
+export { default as Search } from './Search/Search';
+export { default as Cards } from './Search/Cards/Cards';
+export { default as Details } from './Details/Details';
+export { default as Nav } from './Nav/Nav';
+export { default as People } from './People/People';
+export { default as Footer } from './Footer/Footer';
+export { default as CastCrew } from './CastCrew/CastCrew';
+export { default as Comment } from './Comment/Comment';
+export { default as Recommendation } from './Recommendation/Recommendation';
+export { default as KnowFor } from './KnowFor/KnowFor';

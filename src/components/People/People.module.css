@@ -1,0 +1,150 @@
+
+.img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.img:hover {
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 90px auto 50px auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.fullInfo h1 {
+    font-weight: bold;
+    font-size: 31px;
+    margin: 10px 0 25px 0;
+}
+
+.fullInfo h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 15px 0;
+}
+
+.paragraph {
+    white-space: pre-line;
+    line-height: 20px;
+}
+
+.hr {
+    margin: 10px 0;
+    border: 1px solid rgba(77,67,74, .2);
+}
+
+.icon {
+    margin: 25px 0;
+    font-size: 25px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px 0 0;
+}
+
+.info h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info h4 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.info p {
+    margin: 15px 0;
+}
+
+.knownFor {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.knownFor img{
+    width: 150px;
+    height: 230px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.innerContent {
+    transition: all .5s ease;
+}
+
+.innerContent:hover {
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.acting {
+    padding: 10px;
+    background: #fff;
+    border-bottom: rgba( 92, 65, 62, .2) solid 1px;
+    -webkit-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
+}
+
+.actingContainer {
+    display: flex;
+    border-bottom: 1px solid rgba(77,67,74, .3);
+    padding: 15px;
+}
+
+.actingContainer:hover {
+    cursor: pointer;
+}
+
+.spanSpacing {
+    margin: 0 5px 0 20px;
+    display: flex;
+    font-weight: bold;
+}
+
+.circle {
+    height: 7px;
+    width: 7px;
+    border: 2px solid rgba(77,67,74, 1);
+    background: none;
+    border-radius: 50%;
+    margin: auto 0 auto 20px;
+}
+
+.charater {
+    color: #595959;
+}
+
+.as {
+    color: gray;
+    opacity: .7;
+    margin-right: 5px;
+}
+
+.more {
+    font-size: 19px;
+    color: rgba(77,67,74, 1);
+    transition: all .5s ease;
+    display: inline-block;
+    transition: all .5s ease;
+    margin: 10px 0;
+}
+
+.more:hover {
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+

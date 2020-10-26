@@ -1,0 +1,104 @@
+header {
+    background: rgba( 0, 0, 0, .6);
+    padding: 40px;
+}
+
+.content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    transition: all .8s ease;
+    margin: 72px auto 50px auto;
+}
+
+.content section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-left: 20px; 
+}
+
+.content section p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.content section div {
+    display: flex;
+}
+
+.content:hover {
+    cursor: pointer;
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+}
+
+.content section h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.content section span {
+    color: rgba(193,200,196, .8);
+    font-size: 30px;
+    margin: auto 170px auto 0;
+}
+
+header section  {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+}
+
+.container img {
+      width: 150px;
+      height: 200px;
+      border-radius: 10px;
+}
+
+.container p {
+    margin: 5px 0 18px 0;
+}
+
+.container div {
+    transition: all .5s ease;
+}
+
+.container div:hover {
+    cursor: pointer;
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+}
+
+.h3 {
+    width: 1000px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.back {
+    color: #fff;
+    font-size: 15px;
+}
+
+.counter {
+    color: rgb(140,140,140);
+    font: 15px;
+}

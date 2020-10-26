@@ -1,0 +1,100 @@
+.container {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    margin: 50px auto;
+    max-width: 1160px;
+}
+
+header {
+    background: rgba( 0, 0, 0, .6);
+    padding: 40px;
+}
+
+.content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    transition: all .8s ease;
+    margin: 72px auto 50px auto;
+}
+
+.content section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-left: 20px; 
+}
+
+.content section p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.content section div {
+    display: flex;
+}
+
+.content:hover {
+    cursor: pointer;
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+}
+
+.content section h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.content section span {
+    color: rgba(193,200,196, .8);
+    font-size: 30px;
+    margin: auto 170px auto 0;
+}
+
+header section  {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cast, .crew {
+    display: flex;
+    margin: 10px 0;
+    transition: all .5s ease;
+    width: 270px;
+}
+
+.cast div, .crew div  {
+    margin: auto 10px;
+}
+
+.cast img, .crew img {
+    width: 70px;
+    height: auto;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.cast:hover, .crew:hover {
+    transform: translateY(-1px) scale(1.1);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.counter {
+    color: rgb(140,140,140);
+    font: 15px;
+}

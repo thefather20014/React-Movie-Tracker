@@ -1,0 +1,48 @@
+.card {
+    transition: ease .5s all;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: ease .5s all;
+    transform: translateY( -1px ) scale( 1.1 );
+}
+
+.card img {
+    border-radius: 10px;
+    transition: ease .5s all;
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.card img:hover {
+    -webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.20);
+    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.20);
+}
+
+@media screen and (max-width: 550px) {
+
+    .card img {
+        width: 290px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .card img {
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .img {
+        width: 3500px;
+        height: auto;
+        background: green;
+    }
+
+}
