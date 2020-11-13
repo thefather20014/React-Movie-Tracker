@@ -39,6 +39,7 @@ const People = ({ match: { params: { id } } }) => {
             <section className={Style.container}>
                 <div className={Style.personaInfo}>
                     <img className={Style.img} src={data.profile_path ? `https://image.tmdb.org/t/p/original/${data.profile_path}` : image_404} />
+                    <h1 className={Style.title2}> {data.name ? data.name : 'Info Not Available'} </h1>
                     <div className={Style.icon}>
 
                         <a style={facebook} href={data3.facebook_id ? `https://www.facebook.com/${data3.facebook_id}` : ""} target="_blank">
@@ -94,13 +95,13 @@ const People = ({ match: { params: { id } } }) => {
                 </div>
                 <div className={Style.fullInfo}>
 
-                    <h1> {data.name ? data.name : 'Info Not Available'} </h1>
+                    <h1 className={Style.title}> {data.name ? data.name : 'Info Not Available'} </h1>
                     <h2>Biography</h2>
                     { data.biography ? <p className={Style.paragraph}>{data.biography}</p> : "Info Not Available" }
                     <hr className={Style.hr} />
 
-                    <h2>Known For</h2>
-                    <div className={Style.knownFor}>
+                    <h2 style={{ display: data2.length > 0 ? 'grid' : 'none' }}>Known For</h2>
+                    <div style={{ display: data2.length > 0 ? 'grid' : 'none' }} className={Style.knownFor}>
                         {data2 ? data2.slice(0, 12).map(credit => (
                             <a key={credit.id} href={`/details/${credit.id}`} style={{ textDecoration: 'none', color: '#000' }}>
                                 <div className={Style.innerContent}>
@@ -111,8 +112,8 @@ const People = ({ match: { params: { id } } }) => {
                     </div>
                     {data2.length > 12 ? <Link to={`/knowfor/${id}`}><p className={Style.more}>Show All Known For</p></Link> : ''}
                     { /* year - name of movie - character */}
-                    <h2>Acting</h2>
-                    <div className={Style.acting}>
+                    <h2 style={{ display: data2.length > 0 ? 'block' : 'none' }} >Acting</h2>
+                    <div style={{ display: data2.length > 0 ? 'block' : 'none' }} className={Style.acting}>
                         {data2.map(credit => (
                             <a href={`/details/${credit.id}`} style={{ textDecoration: 'none', color: '#000' }}>
                                 <div className={Style.actingContainer} style={{ display: credit.character && credit.title ? 'flex' : 'none' }}>

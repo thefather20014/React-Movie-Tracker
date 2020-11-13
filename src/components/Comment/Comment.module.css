@@ -123,3 +123,59 @@ header img {
     width: 960px;
     margin: 20px auto 70px auto;
 }
+
+@media screen and (max-width: 1028px) {
+
+    .content{
+        max-width: 95vw;
+    }
+
+    .container {
+        max-width: 95vw;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    .content{
+        max-width: 100%;
+        
+    }
+
+    .content section {
+        width: 100%;
+    }
+
+    .content section div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content section span {
+        margin: 3px 0;
+    }
+
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .content{
+        display: block;
+    }
+
+    .content img {
+        width: 130px;
+        margin: 0 0 0 30px;
+    }
+
+    .content section {
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+
+    }
+
+}

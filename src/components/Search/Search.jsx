@@ -15,17 +15,21 @@ const Search = ({ search, setSearch }) => {
     /* console.log(data.total_pages)
      console.log(data.total_results)*/
 
-    const Search = e => setSearch(e.target.value);
+    const Search = e => 
+    {
+        e.preventDefault();
+        setSearch(e.target.value);
+    }
 
     if (!loading) {
         return <div className={Style.loading} >
-                 <img src={logoLoading} />
-            </div>
+            <img src={logoLoading} />
+        </div>
     }
 
     return (
         <div className={Style.container}>
-            <form>
+            <form className={Style.formContainer}>
                 <input type="text" placeholder="Search for a movie" onChange={Search} className={Style.input} />
                 <p className={Style.more}>
                     About <CountUp
@@ -41,7 +45,9 @@ const Search = ({ search, setSearch }) => {
                 {data.results ? data.results.map(data => <Cards data={data} key={data.id} />) : ''}
             </div>
 
-            <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={data.total_pages} />
+            <div className={Style.paginationContainer}>
+                <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={data.total_pages} />
+            </div>
 
         </div>
     )

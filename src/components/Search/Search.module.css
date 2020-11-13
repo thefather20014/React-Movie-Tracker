@@ -1,15 +1,24 @@
 
 .container {
-    max-width: 1000px;
+    width: 100vw;
     margin: 90px auto 100px auto;
-    display: grid;
-    grid-template-columns: repeat( 1, minmax(200px, 1fr) );
-    gap: 30px;
+}
+
+.formContainer {
+    width: 70vw;
+    margin: 0 auto 20px auto;
 }
 
 .container2 {
     display: grid;
     grid-template-columns: repeat( 4, minmax(200px, 1fr) );
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.paginationContainer {
+    margin-left: auto;
+    width: 85vw;
 }
 
 .more {
@@ -33,92 +42,121 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 1000px) {
-
-    .container {
-        max-width: 800px;
-    }
-    
-    .container2 {
-        grid-template-columns: repeat( 3, minmax(200px, 1fr) );
-        gap: 5px;
-    }
-
-}
-
 .loading {
     margin: 100px auto;
     text-align: center;
     width: 80%;
 }
 
-@media screen and (max-width: 850px) {
-
-    .container {
-        width: 800px;
-        margin-left: 150px;
-    }
+@media screen and (max-width: 1268px) {
 
     .container2 {
-        grid-template-columns: repeat( 3, minmax(200px, 1fr) );
+        width: 90vw;
+        gap: 0;
+        margin: auto;
+    }
+
+    
+    .formContainer {
+        width: 90vw;
+    }
+
+    .paginationContainer {
+        margin-left: auto;
+        width: 95vw;
     }
 
 }
 
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 1050px) {
 
     .container {
-        max-width: 700px;
-        margin-left: 170px;
+        width: 100vw;
+        margin: 90px 0 100px 0;
+    }
+    
+    .container2 {
+        grid-template-columns: repeat( 4, minmax(200px, 1fr) );
+        margin: 0 auto;
+        gap: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 980px) {
+
+    .container {
+        width: 100vw;
+        gap: 20px;
     }
 
     .container2 {
         grid-template-columns: repeat( 3, minmax(200px, 1fr) );
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .container {
+        width: 100vw;
+        gap: 20px;
+    }
+
+    .container2 {
+        grid-template-columns: repeat( 3, minmax(200px, 1fr) );
+        margin: auto;
     }
 
     .input:focus {
         width: 300px;
-        border: 2px solid #2980b9;
-        transition: all .5s ease;
     }
+    
+
 }
 
+@media screen and (max-width: 740px) {
+
+    .container2 {
+        grid-template-columns: repeat( 2, minmax(200px, 1fr) );
+    }
+
+}
 
 @media screen and (max-width: 550px) {
 
     .container {
-        max-width: 550px;
-        margin-left: 220px;
-    }
-
-    .container2 {
-        grid-template-columns: repeat( 2, minmax(100px, 1fr) );
-    }
-
-    .input:focus {
-        width: 250px;
-        border: 2px solid #2980b9;
-        transition: all .5s ease;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-
-    .container {
-        max-width: 200px;
-        margin-left: 220px;
-    }
-
-    .container2 {
-        grid-template-columns: repeat( 1, minmax(100px, 1fr) );
+        width: 100vw;
         gap: 20px;
     }
 
+    .container2 {
+        grid-template-columns: repeat( 1, minmax(200px, 1fr) );
+        margin: auto;
+        width: 70vw;
+    }
+
     .input:focus {
         width: 250px;
-        border: 2px solid #2980b9;
-        transition: all .5s ease;
+    }
+
+    .paginationContainer {
+        width: 85vw;
     }
 
 }
+
+@media screen and (max-width: 370px) {
+    .container2 {
+        width: 85vw;
+    }
+
+    .paginationContainer {
+        width: 93vw;
+    }
+
+}
+

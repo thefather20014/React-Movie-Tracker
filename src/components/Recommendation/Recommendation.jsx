@@ -35,7 +35,7 @@ const Recommendation = ({ match: { params: { id } } }) => {
                     <a href={`/details/${recommendation.id}`} style={{ textDecoration: 'none', color: '#000' }}>
                         <div>
                             {recommendation.poster_path ? <img src={`https://image.tmdb.org/t/p/original/${recommendation.poster_path}`} /> : <img src={image_404} />}
-                            <p>{recommendation.title}</p>
+                            <p className={Style.title}>{recommendation.title}</p>
                         </div>
                     </a>)) : "Not Available"}
             </section>

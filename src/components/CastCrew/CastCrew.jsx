@@ -22,7 +22,7 @@ const CastCrew = ({ match: { params: { id } } }) => {
                     <section className={Style.content}>
                         <img src={movie.poster_path ? `https://image.tmdb.org/t/p/original/${movie.poster_path}` : image_404} />
                         <section>
-                            <div>
+                            <div className={Style.innerContent}>
                                 <h2>{movie.title}</h2>
                                 <span className={Style.year}>({new Date(movie.release_date).getFullYear()})</span>
                             </div>

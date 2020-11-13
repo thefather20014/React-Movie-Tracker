@@ -1,13 +1,13 @@
 
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 70px auto 50px auto;
 }
 
 .overlay {
     background: rgba( 78, 64, 59, .9); /*rgba( 202, 110, 5, .9 )*/
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 
@@ -94,6 +94,7 @@
 .innerUp {
     display: flex;
 }
+
 .tagline {
     color: rgba( 212, 213, 216, .8 );
     font-size: 20px;
@@ -350,240 +351,84 @@
     display: none;
 }
 
-@media screen and (max-width: 1530px) {
+.recommendation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+}
 
-    .lowerContainer {
-        width: 1200px;
-    }
+@media screen and (max-width: 1550px) {
 
     .recommendation {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .inner {
-        margin: auto;
-    }
-        
+    .lowerContainer {
+        max-width: 90vw;
+        margin: 0 auto;
+     }
+    
 }
 
 @media screen and (max-width: 1250px) {
 
     .lowerContainer {
-        width: 1100px;
-    } 
-
-    .inner {
-        margin: auto;
+       max-width: 90vw;
+       margin: 0 auto;
     }
+    
 
     .grid {
-        grid-template-columns: 80% 20%;
-    }
-
-}
-
-@media screen and (max-width: 1150px) {
-
-    .lowerContainer {
-        width: 1000px;
-    } 
-
-    .inner {
-        margin: auto;
-    }
-
-    .grid {
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 60% 40%;
     }
 
     .castContainer {
-        grid-template-columns: repeat(5, 1fr);
-        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        height: 100%;
     }
 
+    .inner {
+        max-width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 1050px) {
 
-    .container {
-        overflow: hidden;
-        width: 1100px;
-    }
-
-    .lowerContainer {
-        width: 800px;
-    } 
-
-    .inner {
-        margin: auto;
-    }
-
-    .grid {
-        grid-template-columns: 70% 30%;
-    }
-
-    .castContainer {
-        grid-template-columns: repeat(3, 1fr);
-        height: auto;
-    }
-
     .recommendation {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    
 }
 
-@media screen and (max-width: 890px) {
-
-    .container {
-        overflow: hidden;
-        width: 1050px;
-    }
-
-    .lowerContainer {
-        width: 800px;
-        margin-left: 100px;
-    } 
-
-    .inner {
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 768px) {
 
     .grid {
-        grid-template-columns: 80% 20%;
-    }
-
-}
-
-@media screen and (max-width: 790px) {
-
-    .container {
-        overflow: hidden;
-        width: 1050px;
-    }
-
-    .lowerContainer {
-        width: 750px;
-        margin-left: 180px;
-    } 
-
-    .inner {
-        margin: auto;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .borderCast {
-        border-bottom: 1px solid rgba(77,67,74, .2);
-    }
-
-    .castContainer img {
-        width: 150px;
-        border-radius: 10px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        display: flex;
-    }
-
-    .cast {
-        margin: 10px 0;
-        -webkit-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
-        -moz-box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
-        box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.15);
-        border-bottom: rgba( 92, 65, 62, .2) solid 1px;
-        background: #fff;
-        transition: all .5s ease;
-        cursor: pointer;
-        height: 320px;
-        width: 150px;
-        border-radius: 10px;
+        grid-template-columns: 100%;
     }
 
     .castContainer {
-        grid-template-columns: repeat(3, 1fr);
-        height: auto;
-    }
-
-    .recommendation {
-        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        width: 80vw;
     }
 
     .rightContent {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 20px 0 0 0;
-        padding: 0;
+        margin: 30px 0 0 0;
+        border-top: rgba( 92, 65, 62, .2) solid 1px;
     }
 
-
-    .more2 {
-        margin: 10px 0 25px 5px;
-    }
-
-   .extra {
-       display: block;
-       font-size: 20px;
-       font-weight: bold;
-       margin-bottom: 15px;
-       text-transform: capitalize;
-   }
-
-   .keywords {
-       margin-bottom: 30px;
-   }
-
-}
-
-@media screen and (max-width: 750px) {
-
-    .container {
-        overflow: hidden;
-        width: 1050px;
-    }
-
-    .inner {
+    .extra {
         display: block;
-        margin: auto;
-    }
-
-    .inner img {
-        width: 400px;
-    }
-
-    .innerImg{
-        text-align: center;
-        margin: auto;
-    }
-
-    .content {
-        margin: 20px auto 0 auto;
-    }
-
-    .lowerContainer {
-        width: 700px;
-        margin: 0 0 0 140px;
-    } 
-
-    .rightContent {
-        margin-left: 0px;
+        margin: 10px 0 15px 0;
+        font-weight: bold;
+        font-size: 22px;
     }
 
     .keywords {
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
-
-}
-
-@media screen and (max-width: 500px) {
-
-    .lowerContainer {
-        width: 600px;
-        margin: 0 0 0 210px;
-    } 
 
     .recommendation {
         grid-template-columns: repeat(2, 1fr);
@@ -591,63 +436,150 @@
 
     .recommendation img {
         width: 250px;
+        height: auto;
     }
 
-    .recommendation p {
-        font-size: 20px;
+    .keywords > div {
+        max-width: 400px;
     }
 
+    .circle {
+        display: none;
+    }
+
+    .genre {
+        margin: 0 3px;
+    }
+    
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 668px) {
 
-    .lowerContainer {
-        width: 520px;
-        margin: 0 0 0 250px;
-    } 
+    .inner {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 
-    .recommendation {
-        grid-template-columns: repeat(2, 1fr);
+    .inner img {
+        width: 350px;
+    }
+
+    .content {
+        margin-top: 25px;
     }
 
     .recommendation img {
-        width: 220px;
+        width: 150px;
+        height: auto;
     }
 
-    .recommendation p {
-        font-size: 18px;
+    .video {
+        grid-template-columns: 1fr;
     }
 
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 485px) {
 
-    .lowerContainer {
-        width: 720px;
-        margin: 0 0 0 180px;
-    } 
+    .inner img {
+        width: 300px;
+        margin-top: 30px;
+    }
 
-    .recommendation {
+    .content {
+        width: 100vw;
+        padding: 10px;
+        margin: 20px 0 0 0;
+    }
+
+    .inner {
+        padding: 0;
+        margin: 0;
+    }
+
+    .castContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .recommendation img {
-        width: 220px;
+    .keywords > div {
+        max-width: 250px;
     }
 
-    .recommendation p {
-        font-size: 18px;
+    .recommendation {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recommendation {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommendation img {
+        width: 250px;
     }
 
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 330px) {
+
+    .inner img {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .innerUp {
+        display: block;
+    }
+
+    .castContainer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cast {
+        height: 330px;
+        width: 160px;
+    }
+
+    .castContainer img {
+        width: 160px;
+        border-radius: 10px;
+    }
 
     .lowerContainer {
-        width: 720px;
-        margin: 0 0 0 100px;
-    } 
+        width: 100vw;
+    }
 
-  
+    .keywords > div {
+        width: auto;
+    }
+
+    .genre {
+        margin: 5px 3px;
+    }
+
+}
+
+@media screen and (max-width: 270px) {
+
+    .inner img {
+        width: 150px;
+        margin-top: 30px;
+    }
+
+    .recommendation img {
+        width: 85vw;
+    }
+
+    .innerUp {
+        display: block;
+    }
 
 }

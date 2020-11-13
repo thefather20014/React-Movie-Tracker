@@ -11,7 +11,7 @@ header {
 }
 
 .content{
-    max-width: 1200px;
+    max-width: 90vw;
     margin: auto;
     display: flex;
     padding: 10px;
@@ -98,3 +98,154 @@ header img {
     color: rgb(140,140,140);
     font: 15px;
 }
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        max-width: 760px;
+    }
+
+    .content{
+        max-width: 70vw;
+    }
+} 
+
+@media screen and (max-width: 790px) {
+
+    .container {
+        max-width: 560px;
+    }
+
+    .content{
+        max-width: 90vw;
+    }
+
+    .content img {
+        width: 120px;
+    }
+} 
+
+@media screen and (max-width: 655px) {
+
+    .container {
+        max-width: 560px;
+    }
+
+    .content{
+        max-width: 95vw;
+    }
+
+    .content img {
+        width: 100px;
+    }
+} 
+
+@media screen and (max-width: 610px) {
+
+    .container {
+        max-width: 560px;
+    }
+
+    .content{
+        max-width: 100vw;
+        
+    }
+
+    .innerContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+} 
+
+@media screen and (max-width: 570px) {
+
+    .container {
+        max-width: 470px;
+    }
+
+    .content{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content section {
+        margin: 0px auto 0 auto;
+        text-align: center;
+    }
+
+    .content section div span{
+        margin: 5px auto;
+    }
+} 
+
+@media screen and (max-width: 478px) {
+
+    .container {
+        max-width: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cast img, .crew img {
+        width: 80px;
+    }
+} 
+
+@media screen and (max-width: 360px) {
+
+    .container {
+        max-width: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content section div {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 95vw;
+    }
+
+    .year {
+        text-align: center;
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 278px) {
+
+    .container {
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cast div {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 210px) {
+
+    .container {
+        max-width: 90%;
+        margin: 0 10px
+    }
+}
+
+
+
+

@@ -102,3 +102,129 @@ header img {
     color: rgb(140,140,140);
     font: 15px;
 }
+
+@media screen and (max-width: 1015px) {
+
+    .container {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 90vw;
+    }
+
+    .h3 {
+        width: 90vw;
+    }
+
+    .content{
+        max-width: 91vw;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 95vw;
+    }
+
+    .h3 {
+        width: 95vw;
+    }
+
+    .content{
+        max-width: 100%;
+        
+    }
+
+    .content section {
+        width: 100%;
+    }
+
+    .content section div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content section span {
+        margin: 3px 0;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .container {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    .title {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+
+    .content{
+        display: block;
+    }
+    
+    .content img {
+        width: 130px;
+        margin: 0 0 0 50px;
+    }
+    
+    .content section {
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+    }
+
+}
+
+@media screen and (max-width: 190px) {
+
+
+    .h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 205px) {
+
+    .container img {
+        width: 120px;
+        height: auto;
+        margin: 0;
+    }
+
+    .content img {
+        margin: 0;
+    }
+
+}
